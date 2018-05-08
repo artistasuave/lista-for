@@ -6,10 +6,11 @@ public class Exercicio02 {
 		
 		String texto = " ";
 		
+		for(int j = 0; j<11; j++){
 		for(int i = 0; i<11; i++){
-			for(int j = 0; j<11; j++){
-			texto += "\n" + i+ " x "+ j + " = " + (i*j);
+			texto += i + " x "+ j + " = " + (i*j) + "     ";
 		}
+			texto += "\n";
 		}
 		JOptionPane.showMessageDialog(null, texto);
 	}
